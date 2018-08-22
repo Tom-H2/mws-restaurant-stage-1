@@ -13,23 +13,54 @@ video {
 	width: 100%;
 }
 
-@media screen and (min-width: 565px) {
+@media screen and (max-width: 599px) {
     body {background-color: Red;}
+		.header {
+	    order: 0;
+	    width: 95.5%;
+	  }
+		#footer {
+		  background-color: Red;
+		  color: #aaa;
+		  font-size: 8pt;
+		  letter-spacing: 1px;
+		  padding: 25px;
+		  text-align: center;
+		  text-transform: uppercase;
+		}
  }
- @media screen and (min-width: 566px) and (max-width: 800px) {
+ @media screen and (min-width: 600px) and (max-width: 849px) {
     body {background-color: Blue;}
 		.header {
 	    order: 0;
 	    width: 95.5%;
 	  }
-		.footer {
-			order: 6;
-			width: 95.5%;
+		#footer {
+		  background-color: Blue;
+		  color: #aaa;
+		  font-size: 8pt;
+		  letter-spacing: 1px;
+		  padding: 25px;
+		  text-align: center;
+		  text-transform: uppercase;
 		}
  }
- @media screen and (min-width: 801px) {
+ @media screen and (min-width: 850px) {
     body {background-color: Green;}
-    .container {
+		.header {
+	    order: 0;
+	    width: 95.5%;
+	  }
+		#footer {
+		  background-color: Green;
+		  color: #aaa;
+		  font-size: 8pt;
+		  letter-spacing: 1px;
+		  padding: 25px;
+		  text-align: center;
+		  text-transform: uppercase;
+		}
+		.container {
       width: 800px;
       margin-left: auto;
       margin-right: auto;
