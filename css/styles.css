@@ -8,9 +8,10 @@ body,td,th,p{
 	line-height: 1.5;
 }
 body {
-	
+	background-color: #fdfdfd;
 	margin: 0;
 	position:relative;
+	border-right: 20px;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -39,15 +40,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   background-color: #f3f3f3;
   min-height: 100%;
 }
-#footer {
-  background-color: #444;
-  color: #aaa;
-  font-size: 8pt;
-  letter-spacing: 1px;
-  padding: 25px;
-  text-align: center;
-  text-transform: uppercase;
-}
+
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
@@ -272,15 +265,4 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
-}
-.gridwrapper{
-	display: grid;
- grid-template-columns: 32% 32% 32%;
- grid-gap: 1.5%;
-}
-
-.gridwrapper li {
- border-radius: 5px;
- padding: 20px;
- font-size: 150%;
 }
