@@ -190,6 +190,14 @@ nav h1 a {
   top: 80px;
   width: 50%;
 }
+.inside #map-container-review {
+  background: blue none repeat scroll 0 0;
+  height: 87%;
+  position: fixed;
+  right: 0;
+  top: 80px;
+  width: 50%;
+}
 .inside #map {
   background-color: #ccc;
   height: 100%;
