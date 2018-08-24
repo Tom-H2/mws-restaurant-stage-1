@@ -136,6 +136,11 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
     container.appendChild(noReviews);
     return;
   }
+
+  //if (reviews) already exists {
+    //!title;
+  //}
+  
   const ul = document.getElementById('reviews-list');
   reviews.forEach(review => {
     ul.appendChild(createReviewHTML(review));
