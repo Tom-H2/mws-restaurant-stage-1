@@ -37,7 +37,6 @@ video {
 		 font-size: 150%;
 		}
 
-/*
 		.gridwrapper-review {
 		 display: grid;
 		 grid-template-columns: 90%;
@@ -50,7 +49,6 @@ video {
 		 border-right: 10%;
 		 font-size: 150%;
 		}
-*/
 
 		#restaurant-img {
     max-width: 90vw;
@@ -86,8 +84,8 @@ video {
 		}
 
 		#restaurant-img {
-    max-width: 90vw;
-    width: 90vw;
+    max-width: 90%;
+    width: 90%;
     }
  }
 
@@ -120,7 +118,7 @@ video {
 		}
 
 		#restaurant-img {
-    max-width: 90vw;
-    width: 90vw;
+    max-width: 90%;
+    width: 90%;
     }
  }
