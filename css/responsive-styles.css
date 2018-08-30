@@ -5,17 +5,31 @@ object,
 video {
 	max-width: 100%;
 }
-.box {
-	width: 100%;
-}
 
 @media screen and (max-width: 599px) {
     body {background-color: Red;}
-		.header {
-	    order: 0;
-	    width: 95.5%;
-	  }
-		#footer {
+		.inside {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.inside #breadcrumb {
+			position: absolute;
+    	left: -999em;
+		}
+		.inside #map-container {
+			background: blue none repeat scroll 0 0;
+		  height: 30%;
+			position: fixed;
+		  right: 0;
+		  top: 80px;
+		  width: 100%;
+		}
+		.inside #map {
+		  background-color: #ccc;
+		  height: 100%;
+		  width: 100%;
+		}
+	#footer {
 		  background-color: Red;
 		  color: #aaa;
 		  font-size: 8pt;
@@ -24,43 +38,41 @@ video {
 		  text-align: center;
 		  text-transform: uppercase;
 		}
-		.gridwrapper {
-		 display: grid;
-		 grid-template-columns: 90%;
-		 grid-gap: 1.5%;
+		.inside #footer {
+		  bottom: 0;
+		  position: absolute;
+		  width: 50%;
 		}
-
-		.gridwrapper li {
+	.gridwrapper {
+		 display: grid;
+		 grid-template-columns: auto;
+		 grid-gap: 1.5%;
+	}
+	.gridwrapper li {
 		 border-radius: 5px;
 		 padding: 20px;
-		 border-right: 10%;
+		 border-right: 20px;
 		 font-size: 150%;
-		}
-
-		.gridwrapper-review {
-		 display: grid;
-		 grid-template-columns: 90%;
-		 grid-gap: 1.5%;
-		}
-
-		.gridwrapper-review li {
-		 border-radius: 5px;
-		 padding: 20px;
-		 border-right: 10%;
-		 font-size: 150%;
-		}
-
-		#restaurant-img {
-    max-width: 90vw;
-    width: 90vw;
-    }
+	}
  }
  @media screen and (min-width: 600px) and (max-width: 849px) {
     body {background-color: Blue;}
-		.header {
-	    order: 0;
-	    width: 95.5%;
-	  }
+		.inside #map-container {
+		  background: blue none repeat scroll 0 0;
+		  height: 87%;
+		  position: fixed;
+		  right: 0;
+		  top: 80px;
+		  width: 47%;
+		}
+		.inside #map {
+		  background-color: #ccc;
+		  height: 100%;
+		  width: 100%;
+		}
+		.inside #restaurant-img {
+			width: 85%;
+		}
 		#footer {
 		  background-color: Blue;
 		  color: #aaa;
@@ -82,19 +94,27 @@ video {
 		 border-right: 20px;
 		 font-size: 150%;
 		}
-
-		#restaurant-img {
-    max-width: 90%;
-    width: 90%;
-    }
  }
 
  @media screen and (min-width: 850px) {
     body {background-color: Green;}
-		.header {
-	    order: 0;
-	    width: 95.5%;
-	  }
+		.inside #map-container {
+		  background: blue none repeat scroll 0 0;
+		  height: 87%;
+		  position: fixed;
+		  right: 0;
+		  top: 80px;
+		  width: 47%;
+		}
+		.inside #map {
+		  background-color: #ccc;
+		  height: 100%;
+		  width: 100%;
+		}
+		.inside #restaurant-img {
+			width: 85%;
+			padding: 20px;
+		}
 		#footer {
 		  background-color: Green;
 		  color: #aaa;
@@ -106,7 +126,7 @@ video {
 		}
 		.gridwrapper {
 		 display: grid;
-		 grid-template-columns: 32% 32% 32%;
+		 grid-template-columns: 30% 30% 30%;
 		 grid-gap: 1.5%;
 		}
 
@@ -116,9 +136,4 @@ video {
 		 border-right: 20px;
 		 font-size: 150%;
 		}
-
-		#restaurant-img {
-    max-width: 90%;
-    width: 90%;
-    }
  }
