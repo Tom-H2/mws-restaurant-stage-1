@@ -33,3 +33,5 @@ Most of the code in this project has been written to the ES6 JavaScript specific
 CSS grid  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout#Basic_Example
 
 Responsive images https://developers.google.com/web/ilt/pwa/lab-responsive-images
+
+https://www.w3schools.com/tags/att_global_tabindex.asp
