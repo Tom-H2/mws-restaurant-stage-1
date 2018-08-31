@@ -1,5 +1,5 @@
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
+if ('serviceWorker' in navigator) { //Service Worker allows for cached content to open before on-line content becomes available
+  window.addEventListener('load', function() { //this code was developed by following steps outlined in https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
     navigator.serviceWorker.register('/sw.js').then(function(registration) {
       // Registration was successful
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
