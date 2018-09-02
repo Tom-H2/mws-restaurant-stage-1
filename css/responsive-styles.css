@@ -7,30 +7,31 @@ video {
 }
 
 @media screen and (max-width: 599px) {
-    body {background-color: Red;}
-		.inside {
-			display: flex;
-			flex-wrap: wrap;
-		}
+    body {background-color: #ccc;}
 		.inside #breadcrumb {
 			position: absolute;
-    	left: -999em;
 		}
 		.inside #map-container {
 			background: blue none repeat scroll 0 0;
 		  height: 30%;
 			position: fixed;
-		  right: 0;
+			padding: inherit;
+			right: 20px;
 		  top: 80px;
-		  width: 100%;
+			bottom:20px;
+		  width: 90%;
 		}
 		.inside #map {
 		  background-color: #ccc;
 		  height: 100%;
 		  width: 100%;
 		}
+		.inside #restaurant-img {
+			position: auto;
+			right: 20px;
+			top: 80px;
+		}
 	#footer {
-		  background-color: Red;
 		  color: #aaa;
 		  font-size: 8pt;
 		  letter-spacing: 1px;
@@ -39,14 +40,15 @@ video {
 		  text-transform: uppercase;
 		}
 		.inside #footer {
-		  bottom: 0;
 		  position: absolute;
 		  width: 50%;
+			border: solid;
+			padding: 10px;
 		}
 	.gridwrapper {
 		 display: grid;
-		 grid-template-columns: auto;
-		 grid-gap: 1.5%;
+		 grid-template-columns: 70%;
+		 grid-gap: 10%;
 	}
 	.gridwrapper li {
 		 border-radius: 5px;
@@ -84,8 +86,8 @@ video {
 		}
 		.gridwrapper {
 		 display: grid;
-		 grid-template-columns: 44% 44%;
-		 grid-gap: 1.5%;
+		 grid-template-columns: 35% 35%;
+		 grid-gap: 10%;
 		}
 
 		.gridwrapper li {
@@ -126,14 +128,14 @@ video {
 		}
 		.gridwrapper {
 		 display: grid;
-		 grid-template-columns: 30% 30% 30%;
-		 grid-gap: 1.5%;
+		 grid-template-columns: 20% 20% 20%;
+		 grid-gap: 10%;
 		}
 
 		.gridwrapper li {
 		 border-radius: 5px;
 		 padding: 20px;
-		 border-right: 20px;
+		 border-right: 10px;
 		 font-size: 150%;
 		}
  }
