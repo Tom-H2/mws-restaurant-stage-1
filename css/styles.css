@@ -178,8 +178,7 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
-  position: fixed;
-  top: 0;
+  position: relative;
   width: 100%;
   z-index: 1000;
 }
@@ -197,11 +196,6 @@ nav h1 a {
   background-color: #ccc;
   height: 100%;
   width: 100%;
-}
-.inside #footer {
-  bottom: 0;
-  position: absolute;
-  width: 50%;
 }
 #restaurant-name {
   color: #f18200;
@@ -262,10 +256,10 @@ nav h1 a {
   overflow: hidden;
   padding: 0 20px 20px;
   position: relative;
-  width: 85%;
+  width: 80%;
 }
 #reviews-list li p {
-  margin: 0 0 10px;
+  margin: 0 0 20px;
 }
 #restaurant-hours td {
   color: #666;
