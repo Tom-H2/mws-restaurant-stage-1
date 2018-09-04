@@ -8,28 +8,25 @@ video {
 
 @media screen and (max-width: 599px) {
     body {background-color: #ccc;}
-		.inside #breadcrumb {
-			position: absolute;
+		.inside #header {
+			order: 1;
 		}
 		.inside #map-container {
+			order: 2;
 			background: blue none repeat scroll 0 0;
-		  height: 30%;
-			position: fixed;
-			padding: inherit;
-			right: 20px;
-		  top: 80px;
-			bottom:20px;
-		  width: 90%;
-		}
-		.inside #map {
-		  background-color: #ccc;
-		  height: 100%;
-		  width: 100%;
+		  height: 100vw;
+			position: relative;
+			width: 100vw;
 		}
 		.inside #restaurant-img {
-			position: auto;
-			right: 20px;
-			top: 80px;
+			width: 175%
+		}
+		#restaurant-hours td {
+		  font-size: 7pt;
+			margin: 0;
+		}
+		#reviews-list li {
+			width: 70vw;
 		}
 	#footer {
 		  color: #aaa;
@@ -41,7 +38,7 @@ video {
 		}
 		.inside #footer {
 		  position: absolute;
-		  width: 50%;
+		  width: 90%;
 			border: solid;
 			padding: 10px;
 		}
@@ -67,11 +64,6 @@ video {
 		  top: 80px;
 		  width: 47%;
 		}
-		.inside #map {
-		  background-color: #ccc;
-		  height: 100%;
-		  width: 100%;
-		}
 		.inside #restaurant-img {
 			width: 85%;
 		}
@@ -83,6 +75,12 @@ video {
 		  padding: 25px;
 		  text-align: center;
 		  text-transform: uppercase;
+		}
+		.inside #footer {
+		  position: absolute;
+		  width: 47%;
+			border: solid;
+			padding: 10px;
 		}
 		.gridwrapper {
 		 display: grid;
@@ -108,11 +106,6 @@ video {
 		  top: 80px;
 		  width: 47%;
 		}
-		.inside #map {
-		  background-color: #ccc;
-		  height: 100%;
-		  width: 100%;
-		}
 		.inside #restaurant-img {
 			width: 85%;
 			padding: 20px;
@@ -125,6 +118,12 @@ video {
 		  padding: 25px;
 		  text-align: center;
 		  text-transform: uppercase;
+		}
+		.inside #footer {
+		  position: absolute;
+		  width: 50%;
+			border: solid;
+			padding: 10px;
 		}
 		.gridwrapper {
 		 display: grid;
