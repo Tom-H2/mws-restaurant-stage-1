@@ -1,15 +1,3 @@
-/*if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('./service-worker.js', {scope: './about'})
-        .then(function (registration) {
-            console.log(registration);
-        })
-        .catch(function (e) {
-            console.error(e);
-        })
-} else {
-    console.log('Service Worker is not supported in this browser.');
-}*/
-
 
 if ('serviceWorker' in navigator) { //Service Worker allows for cached content to open before on-line content becomes available
   window.addEventListener('load', function() { //this code was developed by following steps outlined in https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
