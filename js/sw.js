@@ -1,5 +1,5 @@
 let CACHE_VERSION = 'v1';
-let CACHE_FILES = [ //this array lists files for caching 
+let CACHE_FILES = [ //this array lists files for caching
     '/index.html',
     '/restaurant.html',
     '/css/styles.css',
@@ -12,7 +12,7 @@ let CACHE_FILES = [ //this array lists files for caching
 
 self.addEventListener('install', function(event) { //the goal of this file is to call cached files
   event.waitUntil( //The code here was taken from https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers
-    caches.open('v1').then(function(cache) {
+    caches.open(CACHE_VERSION).then(function(cache) {
       return cache.addAll(CACHE_FILES);
     })
   );
