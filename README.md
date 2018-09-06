@@ -12,6 +12,9 @@ This project represents the work of Thomas Harris a required feature of the Udac
 
 This repository uses [leafletjs](https://leafletjs.com/) with a token from [Mapbox](https://www.mapbox.com/).
 
+### Special Thanks
+I want to especially acknowledge Cynthia Clinton who helped me de-bug my code after the second review.
+
 ### Sources
 
 For my grid on the index.html page I used the following documentation [CSS grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout#Basic_Example)
