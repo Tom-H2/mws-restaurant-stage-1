@@ -44,12 +44,12 @@ video {
 		}
 	.gridwrapper {
 		 display: grid;
-		 grid-template-columns: 70%;
+		 grid-template-columns: 80%;
 		 grid-gap: 10%;
 	}
 	.gridwrapper li {
 		 border-radius: 5px;
-		 padding: 20px;
+		 padding: 10px;
 		 border-right: 20px;
 		 font-size: 150%;
 	}
