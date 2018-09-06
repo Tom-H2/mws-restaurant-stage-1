@@ -5,11 +5,11 @@ let CACHE_FILES = [ //this array lists files for caching
     '/restaurant.html',
     '/css/styles.css',
     '/css/responsive-styles.css',
+    'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
+    'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
     '/js/main.js',
     '/js/restaurant_info.js',
     '/img',
-    'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
-    'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
     '/js/dbhelper.js'
   ];
 
@@ -21,18 +21,30 @@ self.addEventListener('install', function(event) { //the goal of this file is to
   );
 });
 
+self.addEventListener('activate', function(e) {
+ console.log('Activating new service worker');
+
+ e.waitUntil(
+   caches.keys().then(function(cacheNames) {
+     return Promise.all(
+     cacheNames.filter(function(cacheName) {
+        return cacheName.startsWith('') && cacheName !== CACHE_VERSION;
+         }).map(function(cacheName){
+            return caches.delete(cacheName);
+           })
+        );
+   })
+ );
+});
+
 self.addEventListener('fetch', function (event) { //for this code I used https://www.sitepoint.com/getting-started-with-service-workers/ as a guide
     event.respondWith(
         caches.match(event.request).then(function(res){
             if(res){
                 return res;
             }
-            requestBackend(event);
-        })
-    )
-});
 
-function requestBackend(event){
+
     var url = event.request.clone();
     return fetch(url).then(function(res){
         //if not a valid response send the error
@@ -47,5 +59,7 @@ function requestBackend(event){
         });
 
         return res;
-    })
-}
+    });
+  })
+ );
+});
